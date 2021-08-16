@@ -1,0 +1,36 @@
+{
+  "name": "mexicanrestaurant",
+  "version": "1.0.0",
+  "description": "This is a website for a fictional restaurant called 'Gato Educado' or 'Polite Cat' in english.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarMelouk/mexicanRestaurant.git"
+  },
+  "keywords": [
+    "gato",
+    "educado",
+    "mexican",
+    "food",
+    "polite",
+    "cat"
+  ],
+  "author": "Omar Melouk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarMelouk/mexicanRestaurant/issues"
+  },
+  "homepage": "https://github.com/OmarMelouk/mexicanRestaurant#readme",
+  "devDependencies": {
+    "sass": "^1.37.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.3.1",
+    "bootstrap": "^5.1.0",
+    "postcss-cli": "^8.3.1"
+  }
+}
