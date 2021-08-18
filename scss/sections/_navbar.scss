@@ -1,0 +1,25 @@
+@use '../custom' as *;
+
+.menu {
+    background: linear-gradient(to right, ($primary, 0.95), ($secondary, 0.95));
+
+    a{
+        color: $white !important;
+        text-transform: capitalize;
+        font-family: 'Amatic SC', cursive;
+        font-weight: bold;
+        font-size: 26px;
+    }
+
+    li{
+        padding: 0 0.7rem;
+
+       
+    }
+}
+.container-fluid{
+    float: right;
+}
+#restaurantName{
+    font-family: 'Berkshire Swash', cursive;
+}

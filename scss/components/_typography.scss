@@ -1,0 +1,14 @@
+@use '../custom' as *;
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    &--intro{
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    &--description{
+        font-size: 40px;
+        display: block;
+    }
+}

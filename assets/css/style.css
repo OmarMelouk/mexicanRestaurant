@@ -1,4 +1,13 @@
 @charset "UTF-8";
+h1, .h1 {
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+}
+
+.font {
+  family: cursive;
+}
+
 /*!
  * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -11111,6 +11120,69 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+.btn-rounded {
+  transition: 0.5s;
+  position: relative;
+  padding: 0.9375rem 4.375rem 0.9375rem 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  border: 0.1rem solid rgba(255, 255, 255, 0.6);
+  background-color: white;
+}
+.btn-rounded span {
+  position: absolute;
+  background-color: #A90409;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.btn-rounded i {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.btn-rounded:hover {
+  transition: 0.5s;
+  background-color: #A90409;
+}
+
+.display-2 {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+.display-2--intro {
+  display: inline-block;
+  font-weight: bold;
+}
+.display-2--description {
+  font-size: 40px;
+  display: block;
+}
+
+.menu {
+  background: linear-gradient(to right, #A90409, 0.95, #0e9d1f, 0.95);
+}
+.menu a {
+  color: #fff !important;
+  text-transform: capitalize;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  font-size: 26px;
+}
+.menu li {
+  padding: 0 0.7rem;
+}
+
+.container-fluid {
+  float: right;
+}
+
+#restaurantName {
+  font-family: "Berkshire Swash", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */
