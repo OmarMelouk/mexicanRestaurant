@@ -4,8 +4,13 @@ h1, .h1 {
   font-family: "Amatic SC", cursive;
 }
 
-.font {
-  family: cursive;
+h2, .h2 {
+  font-weight: bold;
+  font-family: "Berkshire Swash", cursive;
+}
+
+body {
+  background-color: #17610d;
 }
 
 /*!
@@ -11161,6 +11166,34 @@ textarea.form-control-lg {
 .display-2--description {
   font-size: 40px;
   display: block;
+}
+
+.introSection {
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  margin: 0px 0px 0px 0px;
+  align-items: center;
+}
+
+.background {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  background: url("../../images/nachos.jpg");
+  background-size: 100%;
+  margin: 0;
+  padding: 0px;
+}
+.background h2 {
+  color: #fff;
+  margin: 0px;
+  text-align: center;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
 .menu {
