@@ -9,6 +9,17 @@ h2, .h2 {
   font-family: "Berkshire Swash", cursive;
 }
 
+h3, .h3 {
+  font-weight: bold;
+  font-family: "Amatic SC", cursive;
+  font-size: 15px;
+}
+
+body {
+  font-family: "Amatic SC", cursive;
+  background-color: black;
+}
+
 body {
   background-color: #17610d;
 }
@@ -11196,6 +11207,14 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 
+.display-2 {
+  color: white;
+}
+
+.row h1 {
+  color: whitesmoke;
+}
+
 .menu {
   background: linear-gradient(to right, #A90409, 0.95, #0e9d1f, 0.95);
 }
@@ -11216,6 +11235,12 @@ textarea.form-control-lg {
 
 #restaurantName {
   font-family: "Berkshire Swash", cursive;
+}
+
+.logo {
+  align-items: left;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

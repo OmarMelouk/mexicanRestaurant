@@ -19,13 +19,15 @@
 </head>
 <body>
      <!--  NAVBAR  -->
-     <nav class="navbar navbar-expand-lg navbar-dark bg-primary menu me-auto">
-        <div class="container-sm">
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary menu me-auto">
+        <div class="container">
+          <div class = "logo">
           <a class="navbar-brand menu" id = "restaurantName" href="#">
               <img src = 'images/icon_2.png' alt = 'Gato Educado'>
               Gato Educado
-             
+            
           </a>
+        </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,16 +38,16 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Reviews</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">FAQs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact Us</a>
@@ -70,28 +72,93 @@
 
       <section id="home" class="introSection">
         <div class="container">
+
+          <!-- BACKGROUND (NACHOS) -->
           <div class = "background"><div style="background: rgba(0,0,0,0.55);position: absolute; top: 0; left:0; right:0; bottom: 0;">&nbsp;</div>
+
+          <!-- TEXT -->
            <h2>Gato Educado</h2></div>
           
           <div class="row">
             <div id = 'col-md-6 intros'>
               
               <h1 class="display-2"><span class="display-2--intro">We are mexican cuisine aficionados located right here in Cairo, Egypt!</span></h1>
+              <h1>Our Story started when a young hardworking student in the German Uiversity in Cairo in his 3rd Year as an MET student
+                , had an Idea for a fictional restaurant and thought it might be cool to make a website for this very fictional restaurant of his hoping
+                to make a nice portfolio. Down below you will see our very fake menu, and a glimpse of what our very fake customers have to say about it!
+              </h1>
               
               
 
-              <button type = "button" class="rounded-pill btn-rounded"><h1>Check out our Menu</h1>
-                <span>
+              <!-- <button type = "button" class="rounded-pill btn-rounded"><h1>Check out our Menu</h1> -->
+                <!-- <span>
                   <i class="fas fa-book-open"></i>
-                </span>
-              </button>
+                </span> -->
+              <!-- </button> -->
+
+
             </div>
-            <!-- <div id = 'col-md-6 intros'></div>
-          </div> -->
+         
           
         </div>
       </section>
-    
+
+      <!----------------------- MENU ----------------------------->
+     <section class="bg-black text-light p-5 text-center">
+       <div class="container">
+         
+        <div class="row">
+          <div class="section-title">
+            <h2 data-title="Our Menu">Our Menu</h2>
+
+          </div>
+        </div>
+                                    
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col">
+            <div class="card bg-black">
+              <img src="images/nachos.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">Nachos</h1>
+                <h3 class="card-text">What better way to start a meal other than with our Famous Nachos!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black">
+              <img src="images/taco.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">Tacos</h1>
+                <h3 class="card-text">Our tacos in soft or hard shell, whichever you prefer!</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black">
+              <img src="images/burrito.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">Burritos</h1>
+                <h3 class="card-text">Our quality burritos, wrapped with fresh ingredients just for you.</h3>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card bg-black">
+              <img src="images/drinks.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h1 class="card-title">Drinks</h1>
+                <h3 class="card-text">Choose from our variety of authentic mexican drinks.</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+ 
+
+       
+
+     </section>
+
+      
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
