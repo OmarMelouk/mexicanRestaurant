@@ -11243,4 +11243,26 @@ textarea.form-control-lg {
   padding-left: 0;
 }
 
+.reviews {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+}
+
+#reviewStars {
+  color: #A90409;
+}
+
+.carousel-inner > .item > img {
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
 /*# sourceMappingURL=style.css.map */

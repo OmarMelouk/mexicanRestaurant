@@ -1,0 +1,30 @@
+@use '../custom' as *;
+
+.reviews{
+    width: 100%;
+}
+.container{
+    width: 100%;
+}
+
+#reviewStars{
+    color: $primary;
+}
+.carousel-item{
+    // width : 50%;
+    $carousel-transition-duration: 5s;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+  }
+
+  .carousel-control{
+    $carousel-control-color:             $primary;
+  }
+
+  .carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}  
