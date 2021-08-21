@@ -1,0 +1,16 @@
+@use '../custom' as *;
+
+#faqs{
+    h1{
+        text-align: left;
+    }
+    a{
+        color: blue;
+    }
+    li{
+        text-align: left;
+    }
+    h4{
+        font-weight: bold;
+    }
+}
