@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="scss/sections/_navbar.scss"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,8 +21,8 @@
 <body>
   <div id = "top"></div>
      <!--  NAVBAR  -->
-     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary menu me-auto">
-        <div class="container">
+     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-primary menu me-auto p-1">
+        <div class="container-fluid" id = "logo">
           <div class = "logo">
           <a class="navbar-brand menu" id = "restaurantName" href="#">
               <img src = 'images/icon_2.png' alt = 'Gato Educado'>
@@ -34,7 +35,8 @@
           </button>
           
           <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <ul class="navbar-nav me-end mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#top">Home</a>
               </li>
@@ -72,7 +74,7 @@
       <!-- INTRO -->
 
       <section id="about-us" class="introSection">
-        <div class="container">
+        <div class="container" >
 
           <!-- BACKGROUND (NACHOS) -->
           <div class = "background"><div style="background: rgba(0,0,0,0.55);position: absolute; top: 0; left:0; right:0; bottom: 0;">&nbsp;</div>
@@ -105,8 +107,8 @@
       </section>
 
       <!----------------------- MENU ----------------------------->
-     <section class="bg-black text-light p-5 text-center" id = "menu">
-       <div class="container">
+     <section class="bg-black text-light p-4 text-center" id = "menu">
+       <div class="container" >
          
         <div class="row">
           <div class="section-title">
@@ -117,7 +119,7 @@
                                     
         <div class="row row-cols-1 row-cols-md-2 g-4">
           <div class="col">
-            <div class="card bg-primary">
+            <div class="card bg-primary" data-aos="fade-right">
               <img src="images/nachosmenu.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h1 class="card-title">Nachos</h1>
@@ -126,7 +128,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card bg-primary">
+            <div class="card bg-primary" data-aos="fade-left">
               <img src="images/taco.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h1 class="card-title">Tacos</h1>
@@ -135,7 +137,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card bg-primary">
+            <div class="card bg-primary" data-aos="fade-right">
               <img src="images/burrito.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h1 class="card-title">Burritos</h1>
@@ -144,7 +146,7 @@
             </div>
           </div>
           <div class="col">
-            <div class="card bg-primary">
+            <div class="card bg-primary" data-aos="fade-left">
               <img src="images/drinks.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h1 class="card-title">Drinks</h1>
@@ -159,8 +161,8 @@
      <!-- REVIEWS -->
 
 
-     <section class="bg-black text-light p-5 text-center" id="reviews">
-       <div class="container bg-primary-dark">
+     <section class="bg-black text-light p-2 text-center" id="reviews">
+       <div class="container bg-primary-dark" data-aos="fade-up">
          <div class="row"><h2>See what people think of the Gato!</h2></div>
          <br>
          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -218,15 +220,15 @@
      
 
      <!-- FAQs -->
-<section class="bg-black text-light p-5 text-center" id = "faqs">
-  <div id = 'container'></div>
+<section class="bg-black text-light p-1 text-center" id = "faqs">
+  <div id = 'container' data-aos="fade-up"></div>
   <h2>FAQS</h2>
   <br>
   <div class="accordion" id="accordionExample">
     <div class="accordion-item">
       <h4 class="accordion-header" id="headingOne">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-          Who made this amazing website?
+          Who made this website?
         </button>
       </h4>
       <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -268,7 +270,7 @@
 
 <!-- CONTACT  -->
 
-<section class="bg-black text-light p-5 text-center" id = "contact-us">
+<section class="bg-black text-light p-2 text-center" id = "contact-us">
 <h2>Contact US</h2>
 <br>
 <div class="container-contact bg-primary">
@@ -329,7 +331,7 @@
 <!-- FOOTER -->
 <section class="footer">
   <!-- Footer -->
-<footer class="text-center text-lg-start bg-dark text-muted">
+<footer class="text-center text-lg-start bg-black text-muted">
   <!-- Section: Social media -->
   <section
     class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
@@ -394,14 +396,16 @@
   </section>
   <!-- Section: Links  -->
 
-  <!-- Copyright -->
-
-  <!-- Copyright -->
+ 
 </footer>
-<!-- Footer -->
+
 </section>
 
-      
+   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
